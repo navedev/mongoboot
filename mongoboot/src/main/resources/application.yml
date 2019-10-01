@@ -1,0 +1,23 @@
+logging:
+  level:
+    com.*: DEBUG
+    reactor.netty.http.client.HttpClient: DEBUG
+
+server:
+  port: 8082
+spring:
+  data:
+    mongodb:
+      database: test
+      host: localhost
+      port: 27017
+
+      
+webclient:
+  auth:
+    password: espassword
+    username: esuser
+  isAuthenticationRequired: true
+  isRequestLoggingRequired: true
+  isResponseLoggingRequired: true
+  timeOutInMills: 1000
